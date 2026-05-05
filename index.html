@@ -19,28 +19,43 @@
     const counter = document.querySelector("#counter")
 
     let countValue = 0;
+
+
     count.textContent = countValue;
     add.addEventListener("click", ()=>{
       countValue+=1;
+      updateColor();
       count.textContent = countValue;
     });
+
 
     subtract.addEventListener("click", ()=>{
       countValue -=1;
+      updateColor();
       count.textContent = countValue;
-      
-      if(countValue<0){
-      count.style.color = "red";
-      }
-      else{
-       count.style.color = "none";
-      }
+  
       });
+
 
     reset.addEventListener("click", ()=>{
       countValue = 0;
+      updateColor();
       count.textContent = countValue;
+
     });
+
+    function updateColor(){
+      if(countValue<0){
+        count.style.color = "red";
+      }
+      else if(countValue>0){
+        count.style.color = "green";
+      }
+      else{
+        count.style.color = "black";
+      }
+    }
+
   </script>
 
 
