@@ -1,71 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
   <title>Counter</title>
 </head>
 <body>
 
-  <h1 id="counter"><span id="count">0</span></h1>
+  <div class="container">
+     <h1 id="counter"><span id="count">0</span></h1>
 
   <button id="add">+</button>
   <button id="subtract">-</button>
   <button id="reset">Reset</button>
 
-  <script>
-    const add = document.querySelector("#add");
-    const subtract = document.querySelector("#subtract");
-    const reset = document.querySelector("#reset");
-    const count = document.querySelector("#count");
-    const counter = document.querySelector("#counter")
+  </div>
 
-    let countValue = 0;
-
-    count.textContent = countValue;
-
-    
-    add.addEventListener("click", ()=>{
-      
-      if(countValue<10){
-        countValue++;
-      }
-
-      count.textContent = countValue;
-      updateColor();
-    });
-
-
-    subtract.addEventListener("click", ()=>{
-      
-      if(countValue >-10){
-        countValue--;
-      }
-
-      count.textContent = countValue;
-      updateColor();
-      });
-
-
-    reset.addEventListener("click", ()=>{
-      countValue = 0;
-      updateColor();
-      count.textContent = countValue;
-
-    });
-
-    function updateColor(){
-      if(countValue<0){
-        count.style.color = "red";
-      }
-      else if(countValue>0){
-        count.style.color = "green";
-      }
-      else{
-        count.style.color = "black";
-      }
-    }
-
-  </script>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
