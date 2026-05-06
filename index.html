@@ -20,20 +20,28 @@
 
     let countValue = 0;
 
-
     count.textContent = countValue;
+
+    
     add.addEventListener("click", ()=>{
-      countValue+=1;
-      updateColor();
+      
+      if(countValue<10){
+        countValue++;
+      }
+
       count.textContent = countValue;
+      updateColor();
     });
 
 
     subtract.addEventListener("click", ()=>{
-      countValue -=1;
-      updateColor();
+      
+      if(countValue >-10){
+        countValue--;
+      }
+
       count.textContent = countValue;
-  
+      updateColor();
       });
 
 
