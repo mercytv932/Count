@@ -1,0 +1,49 @@
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container{
+      display: grid;
+      width: 500px;
+      place-items: center;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: lightgray;
+      border-radius: 7px;
+
+    }
+
+    #add{
+      margin: 5px;
+      background-color: lightgreen;
+      font-size: 30px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #subtract{
+      margin: 5px;
+      background-color: lightcoral;
+      font-size: 30px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #reset{
+      margin: 5px;
+      background-color: #93CAED;
+      font-size: 18px;
+      border-radius: 2px;
+      padding: 5px 25px;
+      cursor: pointer;
+    }
+
+    #add, #subtract, #reset:hover {
+      transition: 0.2s ease;
+    }
