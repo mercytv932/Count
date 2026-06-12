@@ -1,4 +1,5 @@
 🎯 Counter App
+
 Overview
 
 A simple interactive counter application built with JavaScript to practice DOM manipulation, event listeners, conditions, and state updates.
